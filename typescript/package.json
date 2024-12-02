@@ -37,13 +37,16 @@
     "@aws-sdk/lib-dynamodb": "^3.621.0",
     "@aws-sdk/util-dynamodb": "^3.621.0",
     "axios": "^1.7.2",
+    "body-parser": "^1.20.3",
     "eslint-config-prettier": "^9.1.0",
+    "express": "^4.21.1",
     "natural": "^7.0.7",
     "openai": "^4.52.7",
     "prettier": "^3.3.3",
     "stopword": "^3.0.1"
   },
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/jest": "^29.5.12",
     "@types/mocha": "^10.0.7",
     "@typescript-eslint/eslint-plugin": "^7.17.0",

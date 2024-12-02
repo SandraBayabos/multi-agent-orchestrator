@@ -6,6 +6,7 @@ import {
 
 const orchestrator = new MultiAgentOrchestrator();
 
+// Add a Bedrock LLM Agent with Converse API support
 orchestrator.addAgent(
   new BedrockLLMAgent({
     name: "Tech Agent",
@@ -14,3 +15,16 @@ orchestrator.addAgent(
     streaming: true,
   })
 );
+
+// Add a Lex Bot Agent for handling travel-related queries
+orchestrator.addAgent(
+  new LexBotAgent({
+    name: "Travel Agent",
+    description: "Helps users book and manage their flight reservations",
+    botId: "lexAgent_id",
+    botAliasId: "lexAgent_alias_id",
+    localeId: "en_US",
+  })
+);
+
+export { orchestrator };
